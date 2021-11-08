@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/css/resset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/reponsive.css">   
+    <link rel="stylesheet" href="./assets/css/reponsive.css"> 
+    <link rel="stylesheet" href="./assets/css/form.css">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
     </style>
 </head>
 <body>
@@ -407,9 +408,37 @@
             </div>
         </section>
     </div>
-    
-    
+    <div class="formmessenger js-mess">
+        <div class="name-mess">
+            <div class="logo-mess">
+                <img src="./assets/image/icon-header.png" alt="" class="img-mess-logo">
+            <h3 for="message" class="name-page">Message:</h3>  
+            </div>
+            <div class="icon-mess">
+                <a href="#" class="icon fas fa-phone"></a>
+                <i class="fas fa-minus icon js-closemess"></i>
+            </div>
+        </div>
+        <div class="text-mess">
+            <div id="messages"></div>
+        </div>
+        <form>
+            <div class="mess-submit">
+                <div class="form-group">
+                    <textarea id="m" class="form-control" rows="1" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">
+                    <i class="fas fa-paper-plane"></i>
+                </button>   
+            </div>
+            
+        </form>
+    </div>   
+    <div class="messenger-icon js-openmess js-hidenmess js-hiden">
+        <i class="far fa-comments"></i>
+    </div>
 </body>
+<script src="./assets/js/app.js"></script> 
 <script>
     
 </script>
