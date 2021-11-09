@@ -115,6 +115,8 @@ header {
 }
 
 .hero-attribute {
+    display: flex;
+    align-items: center;
     margin-bottom: 15px;
     padding-right: 30px;
     background-color: #e2eaed;
@@ -123,9 +125,10 @@ header {
 }
 
 .check-icon {
+    display: flex;
+    align-items: center;
     margin-right: 10px;
     font-size: 18px;
-    display: inline-block;
     padding: 8px 12px;
     border-radius: 20px;
     background-color: #feaa25;
