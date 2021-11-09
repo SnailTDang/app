@@ -224,6 +224,7 @@
 
 
 .messenger-icon {
+    cursor: pointer;
     position: fixed;
     bottom: 60%;
     right: 20px;
