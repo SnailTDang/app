@@ -68,7 +68,7 @@ header {
 
 .normal-btn {
     padding:  20px 40px;
-    border: none;
+    border: 3px solid;
     border-radius: 40px;
     font-size: 20px;
     font-weight: bold;
