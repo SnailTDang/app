@@ -65,23 +65,27 @@ header {
 .item a {
     color: #242f51;
 }
-
+.normal-btn{background-image: linear-gradient(to right, #209cff 0%, #26a0da  51%, #68e0cf  100%)}
 .normal-btn {
     padding:  20px 40px;
     border: 3px solid;
     border-radius: 40px;
     font-size: 20px;
     font-weight: bold;
-    color: #ffff;
     transition: all .2s linear;
-    background-color: #2500f9;
-    box-shadow: 0px 0px 8px 5px #a1a1a1;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 1px 5px 1px 1px #c7c7c7;
     
 }
 
 .normal-btn:hover {
-    transform: scale(0.97);
-    box-shadow: 0px 0px 5px 2px #807f7fc0;
+    background-position: right center; /* change the direction of the change here */
+    text-decoration: none;
+    transform: scale(0.98);
+    box-shadow: 0px 2px 1px 1px #c7c7c7;
 }
 
 /* section {
@@ -455,7 +459,7 @@ header {
 }
 .month-button {
     color: rgb(255 255 255);
-    background-color: rgb(37 0 249);
+    background-image: linear-gradient(to right, #209cff 0%, #26a0da  51%, #68e0cf  100%);
     font-weight: 700;
 }
 
@@ -479,7 +483,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 30px;
-    background-color: #cccc;
+    background-image: linear-gradient(to top, #70bfff 0%, #74ccf5  51%, #84fded  100%);
 }
 
 .price-header h1 {
@@ -488,6 +492,11 @@ header {
 
 .price-header h3 {
     padding-top: 30px;
+}
+
+.price-header span {
+    color: #ffff;
+    font-weight: 500;
 }
 .price-summary {
     padding: 25px 0;
