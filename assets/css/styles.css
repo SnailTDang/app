@@ -65,8 +65,9 @@ header {
 .item a {
     color: #242f51;
 }
-.normal-btn{background-image: linear-gradient(to right, #209cff 0%, #26a0da  51%, #68e0cf  100%)}
+
 .normal-btn {
+    background-image: linear-gradient(to right, #209cff 0%, #26a0da  51%, #68e0cf  100%);
     padding:  20px 40px;
     border: 3px solid;
     border-radius: 40px;
@@ -74,7 +75,7 @@ header {
     font-weight: bold;
     transition: all .2s linear;
     text-align: center;
-    transition: 0.5s;
+    transition: 0.4s;
     background-size: 200% auto;
     color: white;            
     box-shadow: 1px 5px 1px 1px #c7c7c7;
@@ -82,7 +83,7 @@ header {
 }
 
 .normal-btn:hover {
-    background-position: right center; /* change the direction of the change here */
+    background-position: right center; /*change the direction of the change here*/
     text-decoration: none;
     transform: scale(0.98);
     box-shadow: 0px 2px 1px 1px #c7c7c7;

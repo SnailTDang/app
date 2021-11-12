@@ -63,9 +63,11 @@
     color: white;
     font-size: 18px;
     padding-bottom: 10px;
+    z-index: -1;
 
 }
 .text-mess {
+    
     height: 420px;
     width: 100%;
     border-top: solid 1px #cecece; 
@@ -225,14 +227,16 @@
 
 
 .messenger-icon {
+    border: 2px solid;
+    box-shadow: 0 0 5px #454545;
     cursor: pointer;
     position: fixed;
     bottom: 60%;
     right: 20px;
     display: block;
-    color: white;
+    color: #fff;
     padding: 20px;
-    border-radius: 5em;
+    border-radius: 50%;
     transition: linear .2s 0.1s;
     background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
 }
