@@ -11,6 +11,7 @@ header {
     background-color: #FFFF;
 }
 
+
 .header-container {
     max-width: 1200px;
     padding: 0 15px;
@@ -441,6 +442,10 @@ header {
     margin-top: 25px;
 }
 
+#pricing {
+    padding-top: 100px;
+}
+
 .price-option {
     display: flex;
     justify-content: center;
@@ -506,3 +511,91 @@ header {
     display: flex;
     flex-direction: column;
 }
+
+#meet-client {
+    padding-top: 100px;
+}
+
+.client-section {
+    display: flex;
+}
+
+.client-map {
+    margin-left: calc((100% - 1600px)/2);
+}
+
+.rating-stars ul {
+    display: flex;
+}
+
+.rating-stars i {
+    color: #ffcc00;
+    padding-right: 10px;
+}
+
+.comment-client {
+    padding: 30px 0;
+}
+
+.main-comment {
+    display: block;
+    padding: 30px 0 15px 0;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.client-name {
+    display: flex;
+    align-items: center;
+}
+
+.name-ceo {
+    padding-left: 30px;
+}
+
+.btn-slide button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+
+.pre {
+    border: 1px solid #d1d1d1;
+    background-color: transparent;
+}
+
+.pre::before {
+    content: "";
+    width: 1px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    right: -14px;
+    transform: translateY(-50%);
+    background-color: #a1a1a1;
+    z-index: 9999;
+
+}
+
+.pre i {
+    color: #dee1e6;
+}
+
+
+
+.next {
+    background-color: #eff3f8;
+    border: none;
+}
+
+.next i {
+    color: #209cff;
+}
+
