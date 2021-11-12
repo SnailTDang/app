@@ -447,7 +447,7 @@ header {
 
 .option-button {
     height: 60px;
-    border: 2px solid;
+    border: 2px solid #d3d3d3;
     border-radius: 25px;
     padding: 3px 3px;
 }
