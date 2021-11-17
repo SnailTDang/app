@@ -241,26 +241,35 @@ var comments = [
     },
     {
         id: 2,
-        name: 'Zoltan Nemeth',
+        name: 'Lucasta 	Amory',
         avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-        position: 'CEO',
+        position: 'CTO',
         summary: 'User friendly & Customizable',
         rate: 5,
         comment: 'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.'
     },
     {
         id: 3,
-        name: 'Zoltan Nemeth',
+        name: 'Milcah Rowena',
         avatar: 'https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80',
-        position: 'CEO',
+        position: 'CFO',
         summary: 'User friendly & Customizable',
         rate: 5,
         comment: 'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.'
     },
     {
         id: 4,
-        name: 'Zoltan Nemeth',
+        name: 'Orla Pandora',
         avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
+        position: 'Manager',
+        summary: 'User friendly & Customizable',
+        rate: 5,
+        comment: 'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.'
+    },
+    {
+        id: 5,
+        name: 'Selina Bernard',
+        avatar: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80',
         position: 'CEO',
         summary: 'User friendly & Customizable',
         rate: 5,
@@ -440,6 +449,6 @@ document.getElementById('comment-client').innerHTML = newComment.join('')
                 nextArrow: $('.next'),
                 infinite: false,
                 autoplay: true,
-                autoplaySpeed: 2500,
+                autoplaySpeed: 2000,
             });
           });
