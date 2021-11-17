@@ -516,6 +516,12 @@ header {
     padding-top: 100px;
 }
 
+.client-content {
+    height: fit-content;
+    position: relative;
+    overflow-x: hidden;
+}
+
 .client-section {
     display: flex;
 }
@@ -533,16 +539,21 @@ header {
     padding-right: 10px;
 }
 
-.comment-client {
-    padding: 30px 0;
-}
+/* #comment-client {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+} */
 
 .main-comment {
     display: block;
-    padding: 30px 0 15px 0;
+    padding: 30px 0 0 0;
+    word-break: break-word;
 }
 
 .client-info {
+    padding: 30px 0 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -553,10 +564,21 @@ header {
     align-items: center;
 }
 
+.client-name img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .name-ceo {
     padding-left: 30px;
 }
-
+.btn-slide {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+}
 .btn-slide button {
     position: relative;
     width: 50px;

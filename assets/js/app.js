@@ -219,7 +219,7 @@ var newQuestions = Faqs.map((Faq) => {
             <h3 class="">${Faq.question}</h3>
             <i class="fas fa-plus"></i>
         </div>
-        <div class="answers" id="answer${Faq.id}">
+        <div class="answers active" id="answer${Faq.id}">
             <span>${Faq.answers}</span>
         </div>
     </div>
@@ -227,6 +227,88 @@ var newQuestions = Faqs.map((Faq) => {
 })
 
 document.getElementById("Faqs-body").innerHTML = newQuestions.join('');
+
+
+var comments = [
+    {
+        id: 1,
+        name: 'Zoltan Nemeth',
+        avatar: './assets/image/client/ceo.png',
+        position: 'CEO',
+        summary: 'User friendly & Customizable',
+        rate: 5,
+        comment: 'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.'
+    },
+    {
+        id: 2,
+        name: 'Zoltan Nemeth',
+        avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+        position: 'CEO',
+        summary: 'User friendly & Customizable',
+        rate: 5,
+        comment: 'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.'
+    },
+    {
+        id: 3,
+        name: 'Zoltan Nemeth',
+        avatar: 'https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80',
+        position: 'CEO',
+        summary: 'User friendly & Customizable',
+        rate: 5,
+        comment: 'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.'
+    },
+    {
+        id: 4,
+        name: 'Zoltan Nemeth',
+        avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
+        position: 'CEO',
+        summary: 'User friendly & Customizable',
+        rate: 5,
+        comment: 'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.'
+    }
+]
+
+var newComment = comments.map((comment) => {
+    return `
+    <div class="client-rating">
+        <div class="rating-stars">
+            <ul>
+                <li class="yellow-stars">
+                    <span class="stars"><i class="fas fa-star"></i></span>
+                </li>
+                <li class="yellow-stars">
+                    <span class="stars"><i class="fas fa-star"></i></span>
+                </li>
+                <li class="yellow-stars">
+                    <span class="stars"><i class="fas fa-star"></i></span>
+                </li>
+                <li class="yellow-stars">
+                    <span class="stars"><i class="fas fa-star"></i></span>
+                </li>
+                <li class="yellow-stars">
+                    <span class="stars"><i class="fas fa-star"></i></span>
+                </li>
+            </ul>
+        </div>
+        <div class="main-comment">
+            <h2 class="comment-heading">${comment.summary}</h2>
+            <span class="main-comment">${comment.comment}</span>
+            <div class="client-info">    
+                <div class="client-name">
+                    <img src="${comment.avatar}" alt="">
+                    <div class="name-ceo">
+                        <h3>${comment.name}</h3>
+                        <span>${comment.position}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    `
+})
+
+document.getElementById('comment-client').innerHTML = newComment.join('')
+
 
 
 
@@ -276,21 +358,6 @@ document.getElementById("Faqs-body").innerHTML = newQuestions.join('');
 
 
         function openAnswer1 () {
-            // click2 = 0;
-            // click3 = 0;
-            // click4 = 0;
-            // click5 = 0;
-            // answers3.classList.remove('active')
-            // answers4.classList.remove('active')
-            // answers5.classList.remove('active')            
-            // answers2.classList.remove('active')
-            // click1 += 1;
-            // if (click1 % 2 == 0) {
-            //     answers1.classList.remove('active')
-            // } else {
-            //     answers1.classList.add("active")
-
-            // }
             if (answers1.style.display !== 'block') {
                 answers1.style.display = 'block';
             } else {
@@ -303,22 +370,7 @@ document.getElementById("Faqs-body").innerHTML = newQuestions.join('');
         }   
 
         function openAnswer2 () {
-            // click1 = 0;
-            // click3 = 0;
-            // click4 = 0;
-            // click5 = 0;
-            // answers1.classList.remove('active')
-            // answers3.classList.remove('active')
-            // answers4.classList.remove('active')
-            // answers5.classList.remove('active')
-            // click2 += 1;         
-            // if (click2 % 2 == 0) {
-            //     answers2.classList.remove('active')
-            // } else {
-            //     answers2.classList.add("active")
 
-            // } 
-            // console.log(click2)
             if (answers2.style.display !== 'block') {
                 answers2.style.display = 'block';
             } else {
@@ -332,22 +384,6 @@ document.getElementById("Faqs-body").innerHTML = newQuestions.join('');
         
 
         function openAnswer3 () {
-            // click1 = 0;
-            // click2 = 0;
-            // click4 = 0;
-            // click5 = 0;
-            // answers1.classList.remove('active')
-            // answers2.classList.remove('active')
-            // answers4.classList.remove('active')
-            // answers5.classList.remove('active')
-            // click3 += 1;         
-            // if (click3 % 2 == 0) {
-            //     answers3.classList.remove('active')
-            // } else {
-            //     answers3.classList.add("active")
-
-            // } 
-            // console.log(click3)
             if (answers3.style.display !== 'block') {
                 answers3.style.display = 'block';
             } else {
@@ -360,21 +396,7 @@ document.getElementById("Faqs-body").innerHTML = newQuestions.join('');
         }
 
         function openAnswer4 () {
-            // click1 = 0;
-            // click2 = 0;
-            // click3 = 0;
-            // click5 = 0;
-            // answers1.classList.remove('active')
-            // answers2.classList.remove('active')
-            // answers3.classList.remove('active')
-            // answers5.classList.remove('active')
-            // click4 += 1;         
-            // if (click4 % 2 == 0) {
-            //     answers4.classList.remove('active')
-            // } else {
-            //     answers4.classList.add("active")
-            // } 
-            // console.log(click4)
+
             if (answers4.style.display !== 'block') {
                 answers4.style.display = 'block';
             } else {
@@ -388,21 +410,7 @@ document.getElementById("Faqs-body").innerHTML = newQuestions.join('');
 
 
         function openAnswer5 () {
-            // click1 = 0;
-            // click2 = 0;
-            // click3 = 0;
-            // click4 = 0;
-            // answers1.classList.remove('active')
-            // answers2.classList.remove('active')
-            // answers3.classList.remove('active')
-            // answers4.classList.remove('active')
-            // click5 += 1;         
-            // if (click5 % 2 == 0) {
-            //     answers5.classList.remove('active')
-            // } else {
-            //     answers5.classList.add("active")
-            // } 
-            // console.log(click5)
+
             if (answers5.style.display !== 'block') {
                 answers5.style.display = 'block';
             } else {
@@ -423,4 +431,15 @@ document.getElementById("Faqs-body").innerHTML = newQuestions.join('');
         questions5.addEventListener("click", openAnswer5)
 
 
-
+        $(document).ready(function(){
+            $('#comment-client').slick({
+                arrows: true,
+                autoplaySpeed: 5000,
+                slidesToShow: 1,
+                prevArrow: $('.pre'),
+                nextArrow: $('.next'),
+                infinite: false,
+                autoplay: true,
+                autoplaySpeed: 2500,
+            });
+          });
