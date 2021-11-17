@@ -274,103 +274,144 @@ document.getElementById("Faqs-body").innerHTML = newQuestions.join('');
         const   answers4 = document.querySelector('#answer4')
         const   answers5 = document.querySelector('#answer5')
 
-    
-        var click1 = 0, click2 = 0, click3 = 0, click4 = 0, click5 = 0;   
-        
 
         function openAnswer1 () {
-            click2 = 0;
-            click3 = 0;
-            click4 = 0;
-            click5 = 0;
-            answers3.classList.remove('active')
-            answers4.classList.remove('active')
-            answers5.classList.remove('active')            
-            answers2.classList.remove('active')
-            click1 += 1;
-            if (click1 % 2 == 0) {
-                answers1.classList.remove('active')
+            // click2 = 0;
+            // click3 = 0;
+            // click4 = 0;
+            // click5 = 0;
+            // answers3.classList.remove('active')
+            // answers4.classList.remove('active')
+            // answers5.classList.remove('active')            
+            // answers2.classList.remove('active')
+            // click1 += 1;
+            // if (click1 % 2 == 0) {
+            //     answers1.classList.remove('active')
+            // } else {
+            //     answers1.classList.add("active")
+
+            // }
+            if (answers1.style.display !== 'block') {
+                answers1.style.display = 'block';
             } else {
-                answers1.classList.add("active")
-
+                answers1.style.display = 'none ';
             }
-            console.log(click1)
-
+            answers4.style.display = 'none'
+            answers3.style.display = 'none'
+            answers2.style.display = 'none'
+            answers5.style.display = 'none'
         }   
 
         function openAnswer2 () {
-            click1 = 0;
-            click3 = 0;
-            click4 = 0;
-            click5 = 0;
-            answers1.classList.remove('active')
-            answers3.classList.remove('active')
-            answers4.classList.remove('active')
-            answers5.classList.remove('active')
-            click2 += 1;         
-            if (click2 % 2 == 0) {
-                answers2.classList.remove('active')
-            } else {
-                answers2.classList.add("active")
+            // click1 = 0;
+            // click3 = 0;
+            // click4 = 0;
+            // click5 = 0;
+            // answers1.classList.remove('active')
+            // answers3.classList.remove('active')
+            // answers4.classList.remove('active')
+            // answers5.classList.remove('active')
+            // click2 += 1;         
+            // if (click2 % 2 == 0) {
+            //     answers2.classList.remove('active')
+            // } else {
+            //     answers2.classList.add("active")
 
-            } 
-            console.log(click2)
+            // } 
+            // console.log(click2)
+            if (answers2.style.display !== 'block') {
+                answers2.style.display = 'block';
+            } else {
+                answers2.style.display = 'none ';
+            }
+            answers4.style.display = 'none'
+            answers3.style.display = 'none'
+            answers5.style.display = 'none'
+            answers1.style.display = 'none'
         }
+        
 
         function openAnswer3 () {
-            click1 = 0;
-            click2 = 0;
-            click4 = 0;
-            click5 = 0;
-            answers1.classList.remove('active')
-            answers2.classList.remove('active')
-            answers4.classList.remove('active')
-            answers5.classList.remove('active')
-            click3 += 1;         
-            if (click3 % 2 == 0) {
-                answers3.classList.remove('active')
-            } else {
-                answers3.classList.add("active")
+            // click1 = 0;
+            // click2 = 0;
+            // click4 = 0;
+            // click5 = 0;
+            // answers1.classList.remove('active')
+            // answers2.classList.remove('active')
+            // answers4.classList.remove('active')
+            // answers5.classList.remove('active')
+            // click3 += 1;         
+            // if (click3 % 2 == 0) {
+            //     answers3.classList.remove('active')
+            // } else {
+            //     answers3.classList.add("active")
 
-            } 
-            console.log(click3)
+            // } 
+            // console.log(click3)
+            if (answers3.style.display !== 'block') {
+                answers3.style.display = 'block';
+            } else {
+                answers3.style.display = 'none ';
+            }
+            answers4.style.display = 'none'
+            answers5.style.display = 'none'
+            answers2.style.display = 'none'
+            answers1.style.display = 'none'
         }
 
         function openAnswer4 () {
-            click1 = 0;
-            click2 = 0;
-            click3 = 0;
-            click5 = 0;
-            answers1.classList.remove('active')
-            answers2.classList.remove('active')
-            answers3.classList.remove('active')
-            answers5.classList.remove('active')
-            click4 += 1;         
-            if (click4 % 2 == 0) {
-                answers4.classList.remove('active')
+            // click1 = 0;
+            // click2 = 0;
+            // click3 = 0;
+            // click5 = 0;
+            // answers1.classList.remove('active')
+            // answers2.classList.remove('active')
+            // answers3.classList.remove('active')
+            // answers5.classList.remove('active')
+            // click4 += 1;         
+            // if (click4 % 2 == 0) {
+            //     answers4.classList.remove('active')
+            // } else {
+            //     answers4.classList.add("active")
+            // } 
+            // console.log(click4)
+            if (answers4.style.display !== 'block') {
+                answers4.style.display = 'block';
             } else {
-                answers4.classList.add("active")
-            } 
-            console.log(click4)
+                answers4.style.display = 'none ';
+            }
+            answers5.style.display = 'none'
+            answers3.style.display = 'none'
+            answers2.style.display = 'none'
+            answers1.style.display = 'none'
         }
 
 
         function openAnswer5 () {
-            click1 = 0;
-            click2 = 0;
-            click3 = 0;
-            click4 = 0;
-            answers1.classList.remove('active')
-            answers2.classList.remove('active')
-            answers3.classList.remove('active')
-            answers4.classList.remove('active')
-            click5 += 1;         
-            if (click5 % 2 == 0) {
-                answers5.classList.remove('active')
+            // click1 = 0;
+            // click2 = 0;
+            // click3 = 0;
+            // click4 = 0;
+            // answers1.classList.remove('active')
+            // answers2.classList.remove('active')
+            // answers3.classList.remove('active')
+            // answers4.classList.remove('active')
+            // click5 += 1;         
+            // if (click5 % 2 == 0) {
+            //     answers5.classList.remove('active')
+            // } else {
+            //     answers5.classList.add("active")
+            // } 
+            // console.log(click5)
+            if (answers5.style.display !== 'block') {
+                answers5.style.display = 'block';
             } else {
-                answers5.classList.add("active")
-            } 
-            console.log(click5)
+                answers5.style.display = 'none ';
+            }
+            answers4.style.display = 'none'
+            answers3.style.display = 'none'
+            answers2.style.display = 'none'
+            answers1.style.display = 'none'
         }
 
 

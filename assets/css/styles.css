@@ -599,6 +599,10 @@ header {
     color: #209cff;
 }
 
+#Faqs-section {
+    padding-top: 100px;
+}
+
 #Faqs-body {
     max-width: 1000px;
     padding: 0 15px;
@@ -638,11 +642,6 @@ header {
     display: none;
     padding-bottom: 50px;
 }
-
-.active{
-    display: block;
-}
-
 
 .answers span {
     display: block;
