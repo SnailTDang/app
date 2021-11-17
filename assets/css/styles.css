@@ -590,7 +590,7 @@ header {
 
 .pre {
     border: 1px solid #d1d1d1;
-    background-color: transparent;
+    background-color: #ffff;
 }
 
 .pre::before {
