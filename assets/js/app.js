@@ -179,8 +179,54 @@ var newMess = messages.map((message)=> {
         `
     }
 })
-console.log(newMess)
+
 document.getElementById("messages").innerHTML = newMess.join('');
+
+
+var Faqs = [
+    {
+        id: 1,
+        question: 'How to contact with riders emergency?',
+        answers: 'Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.'
+    },
+    {
+        id: 2,
+        question: 'App installation failed, how to update system information?',
+        answers: 'Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.'
+    },
+    {
+        id: 3,
+        question: 'Website reponse taking time, how to improve?',
+        answers: 'Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.'
+    },
+    {
+        id: 4,
+        question: 'New update fixed all bug and issues',
+        answers: 'Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.'
+    },
+    {
+        id: 5,
+        question: 'How to contact with riders emergency?',
+        answers: 'Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.'
+    },
+    
+]
+
+var newQuestions = Faqs.map((Faq) => {
+    return `
+    <div class="question-item">
+        <div class="question-heading question-heading${Faq.id}">
+            <h3 class="">${Faq.question}</h3>
+            <i class="fas fa-plus"></i>
+        </div>
+        <div class="answers" id="answer${Faq.id}">
+            <span>${Faq.answers}</span>
+        </div>
+    </div>
+    `
+})
+
+document.getElementById("Faqs-body").innerHTML = newQuestions.join('');
 
 
 
@@ -192,6 +238,7 @@ document.getElementById("messages").innerHTML = newMess.join('');
         const hidens = document.querySelector('.js-hiden')
     
         function HidenMess() {
+            
             hidenmess.classList.add('hiden')
         }
     
@@ -214,3 +261,125 @@ document.getElementById("messages").innerHTML = newMess.join('');
         openMess.addEventListener('click',OpenMess)
         closeMess.addEventListener('click',CloseMess)
         hidenmess.addEventListener('click', HidenMess)
+
+
+        const   questions1 = document.querySelector('.question-heading1')
+        const   questions2 = document.querySelector('.question-heading2')
+        const   questions3 = document.querySelector('.question-heading3')
+        const   questions4 = document.querySelector('.question-heading4')
+        const   questions5 = document.querySelector('.question-heading5')
+        const   answers1 = document.querySelector('#answer1')
+        const   answers2 = document.querySelector('#answer2')
+        const   answers3 = document.querySelector('#answer3')
+        const   answers4 = document.querySelector('#answer4')
+        const   answers5 = document.querySelector('#answer5')
+
+    
+        var click1 = 0, click2 = 0, click3 = 0, click4 = 0, click5 = 0;   
+        
+
+        function openAnswer1 () {
+            click2 = 0;
+            click3 = 0;
+            click4 = 0;
+            click5 = 0;
+            answers3.classList.remove('active')
+            answers4.classList.remove('active')
+            answers5.classList.remove('active')            
+            answers2.classList.remove('active')
+            click1 += 1;
+            if (click1 % 2 == 0) {
+                answers1.classList.remove('active')
+            } else {
+                answers1.classList.add("active")
+
+            }
+            console.log(click1)
+
+        }   
+
+        function openAnswer2 () {
+            click1 = 0;
+            click3 = 0;
+            click4 = 0;
+            click5 = 0;
+            answers1.classList.remove('active')
+            answers3.classList.remove('active')
+            answers4.classList.remove('active')
+            answers5.classList.remove('active')
+            click2 += 1;         
+            if (click2 % 2 == 0) {
+                answers2.classList.remove('active')
+            } else {
+                answers2.classList.add("active")
+
+            } 
+            console.log(click2)
+        }
+
+        function openAnswer3 () {
+            click1 = 0;
+            click2 = 0;
+            click4 = 0;
+            click5 = 0;
+            answers1.classList.remove('active')
+            answers2.classList.remove('active')
+            answers4.classList.remove('active')
+            answers5.classList.remove('active')
+            click3 += 1;         
+            if (click3 % 2 == 0) {
+                answers3.classList.remove('active')
+            } else {
+                answers3.classList.add("active")
+
+            } 
+            console.log(click3)
+        }
+
+        function openAnswer4 () {
+            click1 = 0;
+            click2 = 0;
+            click3 = 0;
+            click5 = 0;
+            answers1.classList.remove('active')
+            answers2.classList.remove('active')
+            answers3.classList.remove('active')
+            answers5.classList.remove('active')
+            click4 += 1;         
+            if (click4 % 2 == 0) {
+                answers4.classList.remove('active')
+            } else {
+                answers4.classList.add("active")
+            } 
+            console.log(click4)
+        }
+
+
+        function openAnswer5 () {
+            click1 = 0;
+            click2 = 0;
+            click3 = 0;
+            click4 = 0;
+            answers1.classList.remove('active')
+            answers2.classList.remove('active')
+            answers3.classList.remove('active')
+            answers4.classList.remove('active')
+            click5 += 1;         
+            if (click5 % 2 == 0) {
+                answers5.classList.remove('active')
+            } else {
+                answers5.classList.add("active")
+            } 
+            console.log(click5)
+        }
+
+
+
+        questions1.addEventListener("click", openAnswer1)
+        questions2.addEventListener("click", openAnswer2)
+        questions3.addEventListener("click", openAnswer3)
+        questions4.addEventListener("click", openAnswer4)
+        questions5.addEventListener("click", openAnswer5)
+
+
+

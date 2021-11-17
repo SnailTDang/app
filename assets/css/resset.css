@@ -370,3 +370,7 @@
   #main{
     overflow: hidden ;
   }
+
+  h3 {
+    font-size: 20px;
+  }

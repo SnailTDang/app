@@ -599,3 +599,54 @@ header {
     color: #209cff;
 }
 
+#Faqs-body {
+    max-width: 1000px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.question-item {
+    background-color: #f5f7fa;
+    padding: 0 50px;
+    margin-bottom: 15px;
+}
+
+/* .question-item:hover .answers {
+    display: block;
+} */
+
+.question-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.question-heading h3 {
+    display: inline-block;
+}
+
+.question-heading span {
+    line-height: normal;
+}
+.question-heading i {
+    font-size: 22px;
+    color: #242f51;
+}
+
+.answers {
+    display: none;
+    padding-bottom: 50px;
+}
+
+.active{
+    display: block;
+}
+
+
+.answers span {
+    display: block;
+    padding-right: 30px;
+    word-break: break-word;
+}
+
