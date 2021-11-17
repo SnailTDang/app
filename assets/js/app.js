@@ -327,7 +327,7 @@ document.getElementById('comment-client').innerHTML = newComment.join('')
         const closeMess = document.querySelector('.js-closemess')
         const hidenmess = document.querySelector('.js-hidenmess')
         const hidens = document.querySelector('.js-hiden')
-    
+
         function HidenMess() {
             
             hidenmess.classList.add('hiden')
@@ -364,6 +364,7 @@ document.getElementById('comment-client').innerHTML = newComment.join('')
         const   answers3 = document.querySelector('#answer3')
         const   answers4 = document.querySelector('#answer4')
         const   answers5 = document.querySelector('#answer5')
+
 
 
         function openAnswer1 () {
