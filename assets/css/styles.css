@@ -401,9 +401,10 @@ header {
     align-items: center;
     text-align: center;
 }
-
+.features-extra {
+    padding-top: 100px;
+}
 .extra-section {
-    padding-top: 50px;
     display: flex;
     padding-left: 215px;
 }

@@ -444,6 +444,7 @@ document.getElementById('comment-client').innerHTML = newComment.join('')
         $(document).ready(function(){
             $('#comment-client').slick({
                 arrows: true,
+                speed: 800,
                 autoplaySpeed: 5000,
                 slidesToShow: 1,
                 prevArrow: $('.pre'),
