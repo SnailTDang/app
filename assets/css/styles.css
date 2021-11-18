@@ -624,6 +624,8 @@ header {
 
 #Faqs-section {
     padding-top: 100px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #6a6c7144;
 }
 
 #Faqs-body {
@@ -672,3 +674,97 @@ header {
     word-break: break-word;
 }
 
+.download {
+    position: relative;
+}
+.download-container {
+    display: flex;
+}
+
+.download-body {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 670px;
+    gap: 40px;
+}
+
+.download-body h1 {
+    font-size: 48px;
+}
+
+.download-os {
+    display: flex;
+    gap: 50px;
+}
+
+.download-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+footer{
+    background-color: #09142e;
+    padding: 100px 0;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-container li a{
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+.item2 {
+    position: relative;
+}
+.item2::before {
+    content: "";
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: all 0.2s linear;
+    transform: translate3d(0,0,0) scaleX(0);
+}
+
+.item2:hover::before {
+    transform: translate3d(0,0,0) scaleX(1);
+}
+
+.footer-menu {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.link {
+    font-size: 30px;
+    color: #949494;
+}
+
+.link:hover {
+    transition: all 0.2s linear;
+    color: #FFFF;
+    transform: scale(1.2);
+}
+
+.copyright {
+    padding-top: 80px;
+    text-align: center;
+}
