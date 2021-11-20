@@ -83,6 +83,10 @@ header {
     
 }
 
+.hero-button a {
+    display: inline-block;
+}
+
 .normal-btn:hover {
     background-position: right center; /*change the direction of the change here*/
     text-decoration: none;
