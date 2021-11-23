@@ -217,7 +217,10 @@ var newQuestions = Faqs.map((Faq) => {
     <div class="question-item">
         <div class="question-heading question-heading${Faq.id}">
             <h3 class="">${Faq.question}</h3>
-            <i class="fas fa-plus"></i>
+            <div class="minus-plus">
+                <i class="fas fa-plus faq-plus"></i>
+                <i class="fas fa-minus faq-minus"></i>
+            </div>
         </div>
         <div class="answers active" id="answer${Faq.id}">
             <span>${Faq.answers}</span>
@@ -364,10 +367,13 @@ document.getElementById('comment-client').innerHTML = newComment.join('')
         const   answers3 = document.querySelector('#answer3')
         const   answers4 = document.querySelector('#answer4')
         const   answers5 = document.querySelector('#answer5')
+        const   minus = document.querySelectorAll('.faq-minus')
+        const   plus = document.querySelectorAll('.faq-plus')
 
 
 
         function openAnswer1 () {
+
             if (answers1.style.display !== 'block') {
                 answers1.style.display = 'block';
             } else {
@@ -386,6 +392,7 @@ document.getElementById('comment-client').innerHTML = newComment.join('')
             } else {
                 answers2.style.display = 'none ';
             }
+
             answers4.style.display = 'none'
             answers3.style.display = 'none'
             answers5.style.display = 'none'
@@ -394,6 +401,7 @@ document.getElementById('comment-client').innerHTML = newComment.join('')
         
 
         function openAnswer3 () {
+
             if (answers3.style.display !== 'block') {
                 answers3.style.display = 'block';
             } else {
@@ -420,6 +428,7 @@ document.getElementById('comment-client').innerHTML = newComment.join('')
 
 
         function openAnswer5 () {
+
 
             if (answers5.style.display !== 'block') {
                 answers5.style.display = 'block';

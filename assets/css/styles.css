@@ -667,6 +667,21 @@ header {
     color: #242f51;
 }
 
+.minus-plus {
+    display: flex;
+    flex-direction: row;
+}
+
+.minus-plus .faq-minus{
+    display: none;
+
+}
+
+.minus-plus .faq-plus {
+    display: block;
+}
+
+
 .answers {
     display: none;
     padding-bottom: 50px;
