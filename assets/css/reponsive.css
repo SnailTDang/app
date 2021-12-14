@@ -1,0 +1,14 @@
+@media screen and (max-width: 1440px){
+    .extra-heading {
+        padding-right: 100px;
+    }
+    .client-map {
+        margin-left: calc((100% - 1440px)/2);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section-container {
+        max-width: 900px;
+    }
+}
