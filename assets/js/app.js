@@ -330,6 +330,16 @@ document.getElementById('comment-client').innerHTML = newComment.join('')
         const closeMess = document.querySelector('.js-closemess')
         const hidenmess = document.querySelector('.js-hidenmess')
         const hidens = document.querySelector('.js-hiden')
+        const logoMess = document.querySelector('.logo-mess')
+        const messPhone = document.querySelector('.fa-phone')
+
+        function stopPropagation (e) {
+            e.stopPropagation();
+        }
+
+        messPhone.addEventListener('click', stopPropagation)
+        
+        logoMess.addEventListener('click', stopPropagation)
 
         function HidenMess() {
             
@@ -367,10 +377,18 @@ document.getElementById('comment-client').innerHTML = newComment.join('')
         const   answers3 = document.querySelector('#answer3')
         const   answers4 = document.querySelector('#answer4')
         const   answers5 = document.querySelector('#answer5')
+        const   questionClick = document.querySelectorAll('.question-heading')
+        const   answerOpen = document.querySelectorAll('.answer')
         const   minus = document.querySelectorAll('.faq-minus')
         const   plus = document.querySelectorAll('.faq-plus')
 
-
+        // questionClick.forEach(item => {
+        //     item.addEventListener('click', function (e) {
+        //         e.target.querySelectorAll('.answers').forEach(item => {
+        //             item.classList.add('answers-open');
+        //         })
+        //     })
+        // })
 
         function openAnswer1 () {
 
