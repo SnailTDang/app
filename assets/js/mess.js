@@ -109,7 +109,7 @@ function listenEnter(e) {
     if (e.shiftKey) {
       return 13;
     }
-    preventDefault;
+    preventDefault(e);
   }
 }
 
