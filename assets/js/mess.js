@@ -20,7 +20,6 @@ const messPhone = document.querySelector(".fa-phone");
 
 function render() {
   var newMess = messages.map((message) => {
-    messInput.value = "";
     if (message.role === "server") {
       return `
         <div class="mess-text server">
@@ -78,6 +77,7 @@ function sendMess() {
   let messCount = messages.length;
   if (userMessInput !== "" && userMessInput != "<br/>") {
     setTimeout((e) => {
+      messInput.value = "";
       messages.push({
         id: messCount + 1,
         role: "client",
