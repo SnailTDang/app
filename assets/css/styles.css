@@ -120,9 +120,11 @@ header {
 }
 
 .hero-content {
+  padding: 0 15px;
+  max-width: 58.3333333%;
+  flex: 0 0 58.3333333%;
   display: flex;
   flex-direction: column;
-  padding: 0 70px;
   justify-content: center;
 }
 
@@ -172,7 +174,9 @@ header {
 }
 
 .hero-phone {
-  padding: 5px 27px;
+  padding: 0 15px;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
 }
 
 #partners {
@@ -198,11 +202,15 @@ header {
 }
 
 .apps-phone {
-  padding-right: 30px;
+  padding: 0 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .apps-content {
-  padding-right: 40px;
+  padding: 0 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .apps-heading {
@@ -368,14 +376,18 @@ header {
 }
 
 .laguages-img {
-  padding: 0 1px;
+  padding: 0 15px;
+  flex: 0 0 58.3333333%;
+  max-width: 58.333333%;
 }
 
 .languages-heading {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 50px;
+  padding: 0 15px;
+  max-width: 41.666667%;
+  flex: 0 0 41.666667%;
 }
 
 .reason-heading {
@@ -411,7 +423,9 @@ header {
 }
 
 .extra-content {
-  padding-right: 70px;
+  padding: 0 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .extra-heading {
@@ -429,6 +443,9 @@ header {
   display: flex;
   position: relative;
   align-items: center;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
 }
 
 .bg-img {
@@ -537,6 +554,12 @@ header {
   flex-direction: column;
 }
 
+.client-section {
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: 0;
+}
+
 #meet-client {
   padding-top: 100px;
 }
@@ -545,6 +568,9 @@ header {
   height: fit-content;
   position: relative;
   overflow-x: hidden;
+  padding: 0 15px;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
 }
 
 .client-section {
@@ -552,7 +578,9 @@ header {
 }
 
 .client-map {
-  margin-left: calc((100% - 1600px) / 2);
+  padding: 0 15px;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
 }
 
 .rating-stars ul {

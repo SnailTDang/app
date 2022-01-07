@@ -144,6 +144,7 @@ render();
 
 function sendMess() {
   let userMessInput = messInput.value;
+  userMessInput = userMessInput.replace(/\n\r?/g, "<br />");
   let messCount = messages.length;
   if (userMessInput !== "") {
     messages.push(
@@ -157,7 +158,7 @@ function sendMess() {
       {
         id: messCount + 2,
         role: "server",
-        name: "You",
+        name: "Support",
         avatar: "./assets/image/avatar_server.jpg",
         message:
           "Cảm ơn bạn đã quan tâm đến công ty chúng tôi, đội ngũ kĩ thuật sẽ trả lời bạn trong dây lát, vui lòng không spam tin nhắn!",
