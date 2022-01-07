@@ -215,13 +215,9 @@ function listenEnter(e) {
 }
 
 messInput.addEventListener("keydown", listenEnter);
-
 messSend.addEventListener("click", sendMess);
-
 messPhone.addEventListener("click", stopPropagation);
-
 logoMess.addEventListener("click", stopPropagation);
-
 closeMess.addEventListener("click", AppearMess);
 openMess.addEventListener("click", OpenMess);
 closeMess.addEventListener("click", CloseMess);
