@@ -46,7 +46,6 @@ let messages = [
     role: "server",
     name: "Support",
     avatar: "./assets/image/avatar_server.jpg",
-
     message: "Hiiigggggggggggggggggggggggggggggggggggggggggi bạn",
   },
   {
@@ -61,7 +60,6 @@ let messages = [
     role: "server",
     name: "Support",
     avatar: "./assets/image/avatar_server.jpg",
-
     message: "Hiiffffaaaaaaaaaaaaaaaaaaaaaii bạn",
   },
   {
@@ -77,7 +75,6 @@ let messages = [
     role: "server",
     name: "Support",
     avatar: "./assets/image/avatar_server.jpg",
-
     message:
       "  Phasellus pulvinar iaculis nunc at placerat. Sed porta sollicitudin eros, vel sagittis turpis consequat nec. Donec ac viverra in scelerisque leo.",
   },
@@ -87,14 +84,13 @@ let messages = [
     name: "You",
     avatar: "./assets/image/avatar_client.jpg",
     message:
-      "               Phasellus pulvinar iaculis nunc at placerat. Sed porta sollicitudin eros, vel sagittis turpis consequat nec.",
+      "Phasellus pulvinar iaculis nunc at placerat. Sed porta sollicitudin eros, vel sagittis turpis consequat nec.",
   },
   {
     id: 13,
     role: "server",
     name: "Support",
     avatar: "./assets/image/avatar_server.jpg",
-
     message: "Hiiii bạn",
   },
   {
@@ -109,68 +105,12 @@ let messages = [
     role: "server",
     name: "Support",
     avatar: "./assets/image/avatar_server.jpg",
-
     message: "Hiiii bạn",
   },
 ];
 
 const messInput = document.querySelector("#mess-input");
 const messSend = document.querySelector("#form-submit");
-
-function render() {
-  var newMess = messages.map((message) => {
-    if (message.role === "server") {
-      return `
-                <div class="mess-text server">
-                    <img src="${message.avatar}" class="avatar">
-                    <span class="messtext mess-server">${message.message}
-                        <div class="name name-server">${message.name}</div>
-                    </span>
-                </div>
-                `;
-    } else if (message.role === "client") {
-      return `
-                <div class="mess-text client">
-                    <span class="messtext mess-client">${message.message}
-                        <div class="name name-client">${message.name}</div>
-                    </span>
-                </div>
-                `;
-    }
-  });
-  document.getElementById("messages").innerHTML = newMess.join("");
-}
-render();
-
-function sendMess() {
-  let userMessInput = messInput.value;
-  userMessInput = userMessInput.replace(/\n\r?/g, "<br />");
-  let messCount = messages.length;
-  if (userMessInput !== "") {
-    messages.push(
-      {
-        id: messCount + 1,
-        role: "client",
-        name: "You",
-        avatar: "./assets/image/avatar_client.jpg",
-        message: userMessInput,
-      },
-      {
-        id: messCount + 2,
-        role: "server",
-        name: "Support",
-        avatar: "./assets/image/avatar_server.jpg",
-        message:
-          "Cảm ơn bạn đã quan tâm đến công ty chúng tôi, đội ngũ kĩ thuật sẽ trả lời bạn trong dây lát, vui lòng không spam tin nhắn!",
-      }
-    );
-  }
-  messInput.value = "";
-  render();
-}
-
-messSend.addEventListener("click", sendMess);
-
 const mess = document.querySelector(".js-mess");
 const openMess = document.querySelector(".js-openmess");
 const closeMess = document.querySelector(".js-closemess");
@@ -179,13 +119,42 @@ const hidens = document.querySelector(".js-hiden");
 const logoMess = document.querySelector(".logo-mess");
 const messPhone = document.querySelector(".fa-phone");
 
+function render() {
+  var newMess = messages.map((message) => {
+    messInput.value = "";
+    if (message.role === "server") {
+      return `
+        <div class="mess-text server">
+            <img src="${message.avatar}" class="avatar">
+            <span class="messtext mess-server"><p>${message.message}</p>
+              <div class="name name-server">${message.name}</div>
+            </span>
+        </div>
+        `;
+    } else if (message.role === "client") {
+      return `
+        <div class="mess-text client">
+            <span class="messtext mess-client"><p>${message.message}</p>
+              <div class="name name-client">${message.name}</div>
+            </span>
+        </div>
+        `;
+    }
+  });
+  document.getElementById("messages").innerHTML = newMess.join("");
+}
+
+function preventDefault(e) {
+  e.preventDefault();
+}
+
 function stopPropagation(e) {
   e.stopPropagation();
 }
 
-messPhone.addEventListener("click", stopPropagation);
-
-logoMess.addEventListener("click", stopPropagation);
+window.onload = function () {
+  render();
+};
 
 function HidenMess() {
   hidenmess.classList.add("hiden");
@@ -204,6 +173,54 @@ function CloseMess() {
   mess.classList.remove("openmess");
   mess.classList.add("closemess");
 }
+
+function sendMess() {
+  let userMessInput = messInput.value.trim().replace(/\n/g, "<br/>");
+  let messCount = messages.length;
+  if (userMessInput !== "" && userMessInput != "<br/>") {
+    setTimeout((e) => {
+      messages.push({
+        id: messCount + 1,
+        role: "client",
+        name: "You",
+        avatar: "./assets/image/avatar_client.jpg",
+        message: userMessInput,
+      });
+      render();
+    }, 0);
+    setTimeout((e) => {
+      messages.push({
+        id: messCount + 2,
+        role: "server",
+        name: "Support",
+        avatar: "./assets/image/avatar_server.jpg",
+        message:
+          "Cảm ơn bạn đã quan tâm đến công ty chúng tôi, đội ngũ kĩ thuật sẽ trả lời bạn trong dây lát, Đây là tin nhắn tự động, vui lòng không spam tin nhắn!",
+      });
+      render();
+    }, 1200);
+  }
+}
+
+function listenEnter(e) {
+  if (e.keyCode == 13) {
+    if (!e.shiftKey && !e.ctrlKey && !e.altKey) {
+      sendMess();
+    }
+    if (e.shiftKey) {
+      return 13;
+    }
+    preventDefault;
+  }
+}
+
+messInput.addEventListener("keydown", listenEnter);
+
+messSend.addEventListener("click", sendMess);
+
+messPhone.addEventListener("click", stopPropagation);
+
+logoMess.addEventListener("click", stopPropagation);
 
 closeMess.addEventListener("click", AppearMess);
 openMess.addEventListener("click", OpenMess);
