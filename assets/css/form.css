@@ -241,18 +241,18 @@
   transition: linear 0.2s 0.1s;
   background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
   z-index: 999;
-  animation: 1.5s messBoxShadow infinite;
+  animation: 2.5s messBoxShadow infinite;
 }
 
 @keyframes messBoxShadow {
   0% {
-    box-shadow: 0 0 5px #29a5f9;
+    box-shadow: 0 0 0 0 #044672d9;
   }
   50% {
-    box-shadow: 0 0 15px 5px #29a6f9;
+    box-shadow: 0 0 0 18px #29a6f900;
   }
   100% {
-    box-shadow: 0 0 5px #29a6f985;
+    box-shadow: 0 0 0 0 #29a6f900;
   }
 }
 .fas,
