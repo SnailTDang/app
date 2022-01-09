@@ -1018,10 +1018,15 @@ footer {
   font-weight: 400;
   letter-spacing: 1.5px;
 }
+
 .item2 {
+  padding: 15px;
+}
+
+.item2 a {
   position: relative;
 }
-.item2::before {
+.item2 a::before {
   content: "";
   position: absolute;
   bottom: -15%;
@@ -1033,7 +1038,7 @@ footer {
   transform: translate3d(0, 0, 0) scaleX(0);
 }
 
-.item2:hover::before {
+.item2:hover a::before {
   transform: translate3d(0, 0, 0) scaleX(1);
 }
 
