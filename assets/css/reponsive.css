@@ -46,7 +46,7 @@
 }
 
 @media screen and (max-width: 992px) {
-  .list-menu-mb {
+  .menu-mb-bg {
     width: 320px;
   }
 
@@ -439,7 +439,7 @@
     text-align: justify;
   }
 
-  .list-menu-mb {
+  .menu-mb-bg {
     display: flex;
     flex-direction: column;
     width: 80vw;

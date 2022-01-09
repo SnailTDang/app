@@ -7,15 +7,22 @@ const priceButton = document.querySelector(".option-button");
 const priceOptions = priceButton.querySelectorAll("button");
 const freePrice = document.querySelector(".month-button");
 const paidPrice = document.querySelector(".annucally-button");
-const menuMobile = document.querySelector(".menu-mb-items");
+const menuMobile = document.querySelector(".menu-mb-bg");
+const menuMobileHiden = document.querySelector(".menu-mb-items");
 const menuOpen = document.querySelector(".meunu-mb").querySelector("i");
 const menuMobileLinks = document.querySelectorAll(".item-mb-link");
 
 function openMeunu() {
+  menuMobileHiden.classList.toggle("menu-mb-open");
   menuMobile.classList.toggle("menu-mb-fly");
   menuOpen.classList.toggle("fa-bars");
   menuOpen.classList.toggle("fa-times");
+  menuMobile.addEventListener("click", function (e) {
+    e.stopPropagation();
+  });
 }
+
+menuMobileHiden.addEventListener("click", openMeunu);
 
 menuMobileLinks.forEach((e) => {
   e.addEventListener("click", openMeunu);
