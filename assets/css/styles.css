@@ -436,11 +436,16 @@ header {
 .img-radius {
   position: relative;
   cursor: grab;
-  height: 98px;
-  width: 98px;
+  height: 100px;
+  width: 100px;
   padding: 20px;
   border-radius: 50%;
   backdrop-filter: blur(10px);
+  background: url("https://separateweb.com/niwax-demo/images/shape/shape-f.png"),
+    #ffffff;
+  background-position: left top;
+  background-size: 270px;
+  background-repeat: no-repeat;
 }
 
 .img-radius::after {
@@ -456,26 +461,26 @@ header {
   box-shadow: 0 0 4px 4px rgb(197, 197, 197);
 }
 .red-radius {
-  background-color: #ffcdd5;
+  background-color: #ffe4e4;
 }
 .blue-radius {
-  background-color: #b0e9ff;
+  background-color: #e1f6ff;
 }
 
 .green-radius {
-  background-color: #b3facd;
+  background-color: #d0ffe1;
 }
 
 .violet-radius {
-  background-color: #f4f4ff;
+  background-color: #fce9ff;
 }
 
 .yellow-radius {
-  background-color: #fff6d3;
+  background-color: #fffbea;
 }
 
 .orange-radius {
-  background-color: #fdeee4;
+  background-color: #fafde4;
 }
 
 .img-3d {

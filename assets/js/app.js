@@ -41,7 +41,7 @@ imageMove();
 function hover3D() {
   $(".img-radius").hover3d({
     selector: ".img-radius-hover",
-    sensitivity: -2.5,
+    sensitivity: -1.6,
     perspective: 1000,
     hoverInClass: "hover-in",
     hoverOutClass: "hover-out",
