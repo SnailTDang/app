@@ -198,12 +198,9 @@
     opacity: 0.2;
   }
 
-  .price-details {
-    gap: 30px;
-  }
-  .price-box {
+  .price-item {
     flex: 0 0 50%;
-    max-width: calc(50% - 15px);
+    max-width: 50%;
   }
 }
 
@@ -266,16 +263,17 @@
     margin: 30px auto;
   }
 
-  .price-details {
-    gap: 30px;
-  }
-
   .question-item {
     padding: 0 25px;
   }
 
   .hero-phone img {
     max-width: 100%;
+  }
+
+  .price-item {
+    flex: 0 0 75%;
+    max-width: 75%;
   }
 }
 @media screen and (max-width: 540px) {
@@ -285,9 +283,9 @@
   .header-content-hero {
     font-size: 36px;
   }
-  .price-box {
+  .price-item {
     flex: 0 0 100%;
-    max-width: 320px;
+    max-width: 360px;
   }
   .hero-header span {
     font-size: 16px;
