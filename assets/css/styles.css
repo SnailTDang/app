@@ -336,7 +336,7 @@ header {
 }
 
 .feature-heading {
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 .red-heading {
@@ -440,7 +440,7 @@ header {
 }
 
 .technical {
-  padding: 0 15px;
+  padding: 15px;
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
 }
