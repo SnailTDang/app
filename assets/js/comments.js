@@ -80,7 +80,7 @@ function renderComment() {
             </div>
             <div class="main-comment">
                 <h2 class="comment-heading">${comment.summary}</h2>
-                <span class="main-comment">${comment.comment}</span>
+                <span class="text-comment">${comment.comment}</span>
                 <div class="client-info">    
                     <div class="client-name">
                         <img src="${comment.avatar}" alt="">
