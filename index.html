@@ -25,8 +25,8 @@
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/reponsive.css" />
     <link rel="stylesheet" href="./assets/css/form.css" />
+    <link rel="stylesheet" href="./assets/css/reponsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,6 +37,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
     </style>
   </head>
+
   <body>
     <div class="wrapper">
       <header>
@@ -98,7 +99,11 @@
             </div>
           </div>
           <div class="hero-phone">
-            <img src="./assets/image/hero/smartphone-hero.png" alt="" />
+            <img
+              src="./assets/image/hero/smartphone-hero.png"
+              alt=""
+              class="img-move"
+            />
           </div>
         </div>
       </section>
@@ -109,26 +114,74 @@
               <span>Trusted by companies like</span>
             </div>
             <div class="partners-items">
-              <a href="#" class="partners-logo">
-                <img src="./assets/image/partners/partner1.png" alt="" />
-              </a>
-              <a href="#" class="partners-logo">
-                <img src="./assets/image/partners/partner2.png" alt="" />
-              </a>
-              <a href="#" class="partners-logo">
-                <img src="./assets/image/partners/partner3.png" alt="" />
-              </a>
-              <a href="#" class="partners-logo">
-                <img src="./assets/image/partners/partner4.png" alt="" />
-              </a>
-              <a href="#" class="partners-logo">
-                <img src="./assets/image/partners/partner5.png" alt="" />
-              </a>
+              <div class="partner-item">
+                <a href="javascript:void(0)" class="partners-logo">
+                  <img
+                    class="img-3d"
+                    src="./assets/image/partners/partner1.png"
+                    alt=""
+                    class="img-3d"
+                  />
+                </a>
+              </div>
+              <div class="partner-item">
+                <a href="javascript:void(0)" class="partners-logo">
+                  <img
+                    class="img-3d"
+                    src="./assets/image/partners/partner2.png"
+                    alt=""
+                    class="img-3d"
+                  />
+                </a>
+              </div>
+              <div class="partner-item">
+                <a href="javascript:void(0)" class="partners-logo">
+                  <img
+                    class="img-3d"
+                    src="./assets/image/partners/partner3.png"
+                    alt=""
+                    class="img-3d"
+                  />
+                </a>
+              </div>
+              <div class="partner-item">
+                <a href="javascript:void(0)" class="partners-logo">
+                  <img
+                    class="img-3d"
+                    src="./assets/image/partners/partner4.png"
+                    alt=""
+                    class="img-3d"
+                  />
+                </a>
+              </div>
+              <div class="partner-item">
+                <a href="javascript:void(0)" class="partners-logo">
+                  <img
+                    class="img-3d"
+                    src="./assets/image/partners/partner5.png"
+                    alt=""
+                    class="img-3d"
+                  />
+                </a>
+              </div>
             </div>
           </div>
           <div class="apps-features">
             <div class="apps-phone">
-              <img src="./assets/image/partners/phone.png" alt="" />
+              <div class="apps-media">
+                <div class="phone-move">
+                  <img
+                    src="./assets/image/partners/phone-front.png"
+                    alt=""
+                    class="phone-front"
+                  />
+                </div>
+                <img
+                  src="./assets/image/partners/phone-bh.png"
+                  alt=""
+                  class="phone-bh"
+                />
+              </div>
             </div>
             <div class="apps-content">
               <div class="apps-heading">
@@ -142,7 +195,13 @@
                 <div class="features">
                   <div class="features-img">
                     <div class="img-radius red-radius">
-                      <img src="./assets/image/partners/speed.png" alt="" />
+                      <div class="img-radius-hover">
+                        <img
+                          class="img-3d"
+                          src="./assets/image/partners/speed.png"
+                          alt=""
+                        />
+                      </div>
                     </div>
                   </div>
                   <div class="feature-summary">
@@ -158,10 +217,13 @@
                 <div class="features">
                   <div class="features-img">
                     <div class="img-radius blue-radius">
-                      <img
-                        src="./assets/image/partners/prototyping.png"
-                        alt=""
-                      />
+                      <div class="img-radius-hover">
+                        <img
+                          class="img-3d"
+                          src="./assets/image/partners/prototyping.png"
+                          alt=""
+                        />
+                      </div>
                     </div>
                   </div>
                   <div class="feature-summary">
@@ -175,7 +237,13 @@
                 <div class="features">
                   <div class="features-img">
                     <div class="img-radius green-radius">
-                      <img src="./assets/image/partners/vector.png" alt="" />
+                      <div class="img-radius-hover">
+                        <img
+                          class="img-3d"
+                          src="./assets/image/partners/vector.png"
+                          alt=""
+                        />
+                      </div>
                     </div>
                   </div>
                   <div class="feature-summary">
@@ -211,47 +279,71 @@
           </div>
           <div class="technicals-list">
             <div class="technical">
-              <div class="technical-icon">
-                <div class="red-radius img-radius">
-                  <img src="./assets/image/development/bill.png" alt="" />
+              <div class="technical-bdrop">
+                <div class="technical-icon">
+                  <div class="red-radius img-radius">
+                    <div class="img-radius-hover">
+                      <img
+                        src="./assets/image/development/bill.png"
+                        alt=""
+                        class="img-3d"
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="feature-summary">
-                <h2 class="feature-heading red-heading">Automatic Payouts</h2>
-                <span
-                  >Get your blood tests delivered at home collect a sample from
-                  the news your blood tests.
-                </span>
+                <div class="feature-summary">
+                  <h2 class="feature-heading red-heading">Automatic Payouts</h2>
+                  <span
+                    >Get your blood tests delivered at home collect a sample
+                    from the news your blood tests.
+                  </span>
+                </div>
               </div>
             </div>
             <div class="technical">
-              <div class="technical-icon">
-                <div class="blue-radius img-radius">
-                  <img src="./assets/image/development/network.png" alt="" />
+              <div class="technical-bdrop">
+                <div class="technical-icon">
+                  <div class="blue-radius img-radius">
+                    <div class="img-radius-hover">
+                      <img
+                        src="./assets/image/development/network.png"
+                        alt=""
+                        class="img-3d"
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="feature-summary">
-                <h2 class="feature-heading blue-heading">Network Effect</h2>
-                <span
-                  >Get your blood tests delivered at home collect a sample from
-                  the news your blood tests.
-                </span>
+                <div class="feature-summary">
+                  <h2 class="feature-heading blue-heading">Network Effect</h2>
+                  <span
+                    >Get your blood tests delivered at home collect a sample
+                    from the news your blood tests.
+                  </span>
+                </div>
               </div>
             </div>
             <div class="technical">
-              <div class="technical-icon">
-                <div class="green-radius img-radius">
-                  <img src="./assets/image/development/badge.png" alt="" />
+              <div class="technical-bdrop">
+                <div class="technical-icon">
+                  <div class="green-radius img-radius">
+                    <div class="img-radius-hover">
+                      <img
+                        src="./assets/image/development/badge.png"
+                        alt=""
+                        class="img-3d"
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="feature-summary">
-                <h2 class="feature-heading green-heading">
-                  Bigger Rewards Method
-                </h2>
-                <span
-                  >Get your blood tests delivered at home collect a sample from
-                  the news your blood tests.
-                </span>
+                <div class="feature-summary">
+                  <h2 class="feature-heading green-heading">
+                    Bigger Rewards Method
+                  </h2>
+                  <span
+                    >Get your blood tests delivered at home collect a sample
+                    from the news your blood tests.
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -278,8 +370,10 @@
       <section class="apps-reason">
         <div class="section-container reason-section">
           <div class="apps-heading languages-heading reason-heading">
-            <h1 class="content-header">Why you should choose our app</h1>
-            <span
+            <h1 class="content-header light-heading">
+              Why you should choose our app
+            </h1>
+            <span class="yellow-text"
               >The rise of mobile devices transforms the way we consume
               information entirely and the world's most elevant channels such as
               Facebook.
@@ -289,12 +383,18 @@
             <div class="reason">
               <div class="reason-icon">
                 <div class="red-radius img-radius">
-                  <img src="./assets/image/app/web-design.png" alt="" />
+                  <div class="img-radius-hover">
+                    <img
+                      class="img-3d"
+                      src="./assets/image/app/web-design.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
               <div class="feature-summary">
-                <h2 class="feature-heading">App Development</h2>
-                <span
+                <h2 class="feature-heading light-heading">App Development</h2>
+                <span class="yellow-text"
                   >Get your blood tests delivered at home collect a sample from
                   the news your blood tests.
                 </span>
@@ -303,12 +403,18 @@
             <div class="reason">
               <div class="reason-icon">
                 <div class="blue-radius img-radius">
-                  <img src="./assets/image/app/trophy.png" alt="" />
+                  <div class="img-radius-hover">
+                    <img
+                      class="img-3d"
+                      src="./assets/image/app/trophy.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
               <div class="feature-summary">
-                <h2 class="feature-heading">10 Times Award</h2>
-                <span
+                <h2 class="feature-heading light-heading">10 Times Award</h2>
+                <span class="yellow-text"
                   >Get your blood tests delivered at home collect a sample from
                   the news your blood tests.
                 </span>
@@ -317,12 +423,18 @@
             <div class="reason">
               <div class="reason-icon">
                 <div class="yellow-radius img-radius">
-                  <img src="./assets/image/app/computer.png" alt="" />
+                  <div class="img-radius-hover">
+                    <img
+                      class="img-3d"
+                      src="./assets/image/app/computer.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
               <div class="feature-summary">
-                <h2 class="feature-heading">Cloud Storage</h2>
-                <span
+                <h2 class="feature-heading light-heading">Cloud Storage</h2>
+                <span class="yellow-text"
                   >Get your blood tests delivered at home collect a sample from
                   the news your blood tests.
                 </span>
@@ -331,12 +443,18 @@
             <div class="reason">
               <div class="reason-icon">
                 <div class="violet-radius img-radius">
-                  <img src="./assets/image/app/customer-support.png" alt="" />
+                  <div class="img-radius-hover">
+                    <img
+                      class="img-3d"
+                      src="./assets/image/app/customer-support.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
               <div class="feature-summary">
-                <h2 class="feature-heading">Customization</h2>
-                <span
+                <h2 class="feature-heading light-heading">Customization</h2>
+                <span class="yellow-text"
                   >Get your blood tests delivered at home collect a sample from
                   the news your blood tests.
                 </span>
@@ -345,12 +463,18 @@
             <div class="reason">
               <div class="reason-icon">
                 <div class="orange-radius img-radius">
-                  <img src="./assets/image/app/ui.png" alt="" />
+                  <div class="img-radius-hover">
+                    <img
+                      class="img-3d"
+                      src="./assets/image/app/ui.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
               <div class="feature-summary">
-                <h2 class="feature-heading">UX Planning</h2>
-                <span
+                <h2 class="feature-heading light-heading">UX Planning</h2>
+                <span class="yellow-text"
                   >Get your blood tests delivered at home collect a sample from
                   the news your blood tests.
                 </span>
@@ -359,12 +483,18 @@
             <div class="reason">
               <div class="reason-icon">
                 <div class="green-radius img-radius">
-                  <img src="./assets/image/app/customer-service.png" alt="" />
+                  <div class="img-radius-hover">
+                    <img
+                      class="img-3d"
+                      src="./assets/image/app/customer-service.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
               <div class="feature-summary">
-                <h2 class="feature-heading">Customer Support</h2>
-                <span
+                <h2 class="feature-heading light-heading">Customer Support</h2>
+                <span class="yellow-text"
                   >Get your blood tests delivered at home collect a sample from
                   the news your blood tests.
                 </span>
@@ -374,7 +504,7 @@
         </div>
       </section>
       <section class="features-extra" id="technicals">
-        <div class="extra-section">
+        <div class="extra-section section-container">
           <div class="extra-content">
             <div class="extra-heading apps-heading">
               <h1 class="content-header">Ultimate features that we built</h1>
@@ -387,7 +517,13 @@
               <div class="features-item">
                 <div class="reason-icon">
                   <div class="red-radius img-radius">
-                    <img src="./assets/image/app/web-design.png" alt="" />
+                    <div class="img-radius-hover">
+                      <img
+                        class="img-3d"
+                        src="./assets/image/app/web-design.png"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
                 <div class="feature-summary">
@@ -401,7 +537,13 @@
               <div class="features-item">
                 <div class="reason-icon">
                   <div class="green-radius img-radius">
-                    <img src="./assets/image/app/ui.png" alt="" />
+                    <div class="img-radius-hover">
+                      <img
+                        class="img-3d"
+                        src="./assets/image/app/ui.png"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
                 <div class="feature-summary">
@@ -415,7 +557,13 @@
               <div class="features-item">
                 <div class="reason-icon">
                   <div class="yellow-radius img-radius">
-                    <img src="./assets/image/app/trophy.png" alt="" />
+                    <div class="img-radius-hover">
+                      <img
+                        class="img-3d"
+                        src="./assets/image/app/trophy.png"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
                 <div class="feature-summary">
@@ -429,7 +577,13 @@
               <div class="features-item">
                 <div class="reason-icon">
                   <div class="violet-radius img-radius">
-                    <img src="./assets/image/app/customer-service.png" alt="" />
+                    <div class="img-radius-hover">
+                      <img
+                        class="img-3d"
+                        src="./assets/image/app/customer-service.png"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
                 <div class="feature-summary">
@@ -446,11 +600,17 @@
             </div>
           </div>
           <div class="extra-img">
-            <div class="main-img">
-              <img src="./assets/image/app/double-phone.png" alt="" />
-            </div>
-            <div class="bg-img">
-              <img src="./assets/image/app/Ellipse 6.png" alt="" />
+            <div class="extra-media">
+              <div class="main-img">
+                <img src="./assets/image/app/double-phone.png" alt="" />
+              </div>
+              <div class="bg-img">
+                <img
+                  class="img-3d"
+                  src="./assets/image/app/Ellipse 6.png"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -469,17 +629,19 @@
           </div>
           <div class="price-option">
             <div class="option-button">
-              <button class="month-button">Monthly</button>
+              <button class="month-button text-color-button">Monthly</button>
               <button class="annucally-button">Annually</button>
             </div>
           </div>
           <div class="price-details">
-            <div class="price-box">
+            <div class="price-box free-box">
               <div class="price-header">
                 <h1>$0</h1>
                 <span>/month</span>
                 <h3>Business Class</h3>
-                <span><p>For small teams or office</p></span>
+                <span>
+                  <p>For small teams or office</p>
+                </span>
               </div>
               <div class="price-summary">
                 <span>Drag & Drop Builder</span>
@@ -491,12 +653,14 @@
                 </button>
               </div>
             </div>
-            <div class="price-box">
+            <div class="price-box paid-box">
               <div class="price-header">
                 <h1>$99</h1>
                 <span>/month</span>
                 <h3>Business Class</h3>
-                <span><p>For small teams or office</p></span>
+                <span>
+                  <p>For small teams or office</p>
+                </span>
               </div>
               <div class="price-summary">
                 <span>Drag & Drop Builder</span>
@@ -660,6 +824,7 @@
     <div class="messenger-icon js-openmess js-hidenmess js-hiden">
       <i class="far fa-comments"></i>
     </div>
+    <script src="./assets/js/jquery-1.12.1.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -670,6 +835,7 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="./assets/js/jquery.hover3d.min.js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/mess.js"></script>
     <script src="./assets/js/comments.js"></script>

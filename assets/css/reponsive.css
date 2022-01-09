@@ -1,14 +1,442 @@
-@media screen and (max-width: 1440px){
-    .extra-heading {
-        padding-right: 100px;
-    }
-    .client-map {
-        margin-left: calc((100% - 1440px)/2);
-    }
+@media screen and (max-width: 1200px) {
+  .header-container {
+    max-width: 960px;
+  }
+  .section-container {
+    max-width: 960px;
+  }
+
+  .client-section {
+    margin: 0 auto;
+  }
+
+  .extra-img {
+    flex-wrap: wrap;
+  }
+
+  .extra-section {
+    flex-direction: column-reverse;
+  }
+
+  .extra-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .extra-img {
+    flex: 0 0 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .technicals-list {
+    gap: 30px 0;
+  }
+  .technical {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .client-map {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .client-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
-@media screen and (max-width: 1200px) {
-    .section-container {
-        max-width: 900px;
-    }
+@media screen and (max-width: 992px) {
+  .header-container {
+    max-width: 720px;
+  }
+  .section-container {
+    max-width: 720px;
+  }
+  .menu-items {
+    display: none;
+  }
+
+  .content-header {
+    font-size: 36px;
+  }
+
+  .hero-content {
+    padding-top: 50px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .hero-phone {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-phone img {
+    width: inherit;
+  }
+
+  .partner-item {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .apps-phone {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .apps-heading {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .apps-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .list-features {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px 0;
+    flex-wrap: wrap;
+  }
+
+  .features {
+    padding: 0 15px;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .jackpots {
+    padding: 0;
+    text-align: center;
+  }
+
+  .technicals-list {
+    gap: 30px 0;
+  }
+
+  .jackpots-heading {
+    margin-bottom: 30px;
+    padding: 0 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    border: none;
+  }
+
+  .jackpots-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .technical {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .languages-tech {
+    flex-direction: column-reverse;
+  }
+
+  .laguages-img {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .languages-heading {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .reason-heading {
+    padding: 0;
+  }
+  .list-reason {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .extra-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .extra-img {
+    flex: 0 0100%;
+    max-width: 100%;
+  }
+
+  .extra-media {
+    margin-top: 30px;
+  }
+
+  .extra-img img {
+    width: 100%;
+  }
+
+  .client-section {
+    margin: 0 auto;
+  }
+
+  .client-map {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .client-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .download-img {
+    z-index: -1;
+    opacity: 0.2;
+  }
+
+  .price-details {
+    gap: 30px;
+  }
+  .price-box {
+    flex: 0 0 50%;
+    max-width: calc(50% - 15px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px 0;
+  }
+  .header-container {
+    max-width: 540px;
+  }
+
+  .section-container {
+    max-width: 540px;
+  }
+
+  .normal-btn {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+
+  .header-content-hero {
+    font-size: 45px;
+  }
+
+  .partners-items {
+    padding: 0;
+  }
+
+  .content-header {
+    font-size: 24px;
+  }
+
+  .features {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .technical {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .list-reason {
+    grid-template-columns: 1fr;
+  }
+
+  .list-extra {
+    grid-template-columns: 1fr;
+  }
+
+  .features-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .features-btn {
+    margin: 30px auto;
+  }
+
+  .price-details {
+    gap: 30px;
+  }
+
+  .question-item {
+    padding: 0 25px;
+  }
+
+  .hero-phone img {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .hero-content {
+    padding-top: 30px;
+  }
+  .header-content-hero {
+    font-size: 36px;
+  }
+  .price-box {
+    flex: 0 0 100%;
+    max-width: 320px;
+  }
+  .hero-header span {
+    font-size: 16px;
+  }
+
+  .hero-button {
+    margin-top: 15px;
+  }
+  .play-video {
+    display: none;
+  }
+
+  .list-partners {
+    padding-bottom: 15px;
+  }
+
+  .apps-phone {
+    display: none;
+  }
+
+  .apps-features {
+    padding: 15px 0;
+  }
+
+  .apps-heading {
+    max-width: 100%;
+    padding: 15px 0;
+  }
+
+  .features {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px 0;
+  }
+
+  .features-img {
+    padding: 0;
+  }
+
+  .development {
+    padding: 50px 0;
+  }
+
+  .apps-reason {
+    padding: 50px 0;
+  }
+
+  .list-reason {
+    padding: 25px 0;
+    grid-gap: 20px;
+  }
+
+  .features-extra {
+    padding: 50px 0;
+  }
+
+  #pricing {
+    padding: 50px 0;
+  }
+
+  .option-button {
+    max-width: 100%;
+  }
+
+  .btn-slide {
+    display: none;
+  }
+
+  #meet-client {
+    padding: 50px 0;
+  }
+
+  .main-comment {
+    text-align: justify;
+  }
+
+  .question-heading {
+    padding: 15px 0;
+  }
+
+  .question-heading h3 {
+    font-size: 16px;
+  }
+
+  .answers span {
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .answers {
+    padding-bottom: 20px;
+  }
+
+  span {
+    line-height: 1.5666666;
+  }
+
+  #Faqs-section {
+    padding: 50px 0;
+  }
+
+  .download-body h1 {
+    font-size: 36px;
+  }
+
+  .download-body {
+    padding: 50px 0;
+    gap: 20px;
+  }
+
+  footer {
+    padding: 80px 0;
+  }
+
+  .footer-menu {
+    gap: 20px;
+  }
+
+  .copyright {
+    padding-top: 30px;
+  }
+
+  .formmessenger {
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    height: 85vh;
+  }
+
+  .text-mess {
+    height: calc(100% - 70px);
+    padding-bottom: 70px;
+  }
+  .formmessenger form {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .menu-button {
+    display: none;
+  }
+  .messenger-icon {
+    padding: 10px;
+  }
+
+  .messenger-icon .far {
+    font-size: 16px;
+  }
 }

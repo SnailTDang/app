@@ -65,11 +65,13 @@ function AppearMess() {
 function OpenMess() {
   mess.classList.add("openmess");
   mess.classList.remove("closemess");
+  HidenMess();
 }
 
 function CloseMess() {
   mess.classList.remove("openmess");
   mess.classList.add("closemess");
+  AppearMess();
 }
 
 function sendMess() {
@@ -77,7 +79,6 @@ function sendMess() {
   let messCount = messages.length;
   if (userMessInput !== "" && userMessInput != "<br/>") {
     setTimeout((e) => {
-      messInput.value = "";
       messages.push({
         id: messCount + 1,
         role: "client",
@@ -99,9 +100,10 @@ function sendMess() {
       render();
     }, 1200);
   }
+  messInput.value = "";
 }
 
-function listenEnter(e) {
+function listenKeyPress(e) {
   if (e.keyCode == 13) {
     if (!e.shiftKey && !e.ctrlKey && !e.altKey) {
       sendMess();
@@ -111,13 +113,14 @@ function listenEnter(e) {
     }
     preventDefault(e);
   }
+  if (e.keyCode == 27) {
+    CloseMess();
+  }
 }
 
-messInput.addEventListener("keydown", listenEnter);
+messInput.addEventListener("keydown", listenKeyPress);
 messSend.addEventListener("click", sendMess);
 messPhone.addEventListener("click", stopPropagation);
 logoMess.addEventListener("click", stopPropagation);
-closeMess.addEventListener("click", AppearMess);
 openMess.addEventListener("click", OpenMess);
 closeMess.addEventListener("click", CloseMess);
-hidenmess.addEventListener("click", HidenMess);

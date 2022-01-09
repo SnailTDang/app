@@ -230,7 +230,6 @@
 
 .messenger-icon {
   border: 2px solid;
-  box-shadow: 0 0 5px #454545;
   cursor: pointer;
   position: fixed;
   bottom: 60%;
@@ -241,6 +240,20 @@
   border-radius: 50%;
   transition: linear 0.2s 0.1s;
   background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
+  z-index: 999;
+  animation: 1.5s messBoxShadow infinite;
+}
+
+@keyframes messBoxShadow {
+  0% {
+    box-shadow: 0 0 5px #29a5f9;
+  }
+  50% {
+    box-shadow: 0 0 15px 5px #29a6f9;
+  }
+  100% {
+    box-shadow: 0 0 5px #29a6f985;
+  }
 }
 .fas,
 .far {
