@@ -7,6 +7,21 @@ const priceButton = document.querySelector(".option-button");
 const priceOptions = priceButton.querySelectorAll("button");
 const freePrice = document.querySelector(".month-button");
 const paidPrice = document.querySelector(".annucally-button");
+const menuMobile = document.querySelector(".menu-mb-items");
+const menuOpen = document.querySelector(".meunu-mb").querySelector("i");
+const menuMobileLinks = document.querySelectorAll(".item-mb-link");
+
+function openMeunu() {
+  menuMobile.classList.toggle("menu-mb-fly");
+  menuOpen.classList.toggle("fa-bars");
+  menuOpen.classList.toggle("fa-times");
+}
+
+menuMobileLinks.forEach((e) => {
+  e.addEventListener("click", openMeunu);
+});
+
+menuOpen.addEventListener("click", openMeunu);
 
 function imageMove() {
   setInterval(() => {

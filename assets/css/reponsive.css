@@ -46,6 +46,10 @@
 }
 
 @media screen and (max-width: 992px) {
+  .list-menu-mb {
+    width: 320px;
+  }
+
   .hero-container {
     padding-top: 50px;
   }
@@ -197,6 +201,9 @@
   .price-item {
     flex: 0 0 50%;
     max-width: 50%;
+  }
+  .meunu-mb {
+    display: block;
   }
 }
 
@@ -423,7 +430,7 @@
     display: none;
   }
   .messenger-icon {
-    padding: 10px;
+    padding: 15px;
   }
 
   .far {
@@ -433,5 +440,13 @@
     display: block;
     padding-top: 10px;
     text-align: justify;
+  }
+
+  .list-menu-mb {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 100vh;
+    padding: 0 20px;
   }
 }
