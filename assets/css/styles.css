@@ -123,11 +123,12 @@ header {
   transition: all 0.5s linear;
   visibility: hidden;
   opacity: 0;
+  display: none;
 }
 
 .menu-mb-bg {
   background-color: #f6facf;
-  width: 80vw;
+  width: 320px;
   height: 100vh;
   transition: all 0.3s linear;
   transform: translateX(-100%);
@@ -139,11 +140,14 @@ header {
   flex-direction: column;
 }
 
-.menu-mb-items .header-logo {
-  height: 75px;
+.header-logo {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.menu-mb-items .header-logo {
+  height: 75px;
 }
 
 .item-mb {
