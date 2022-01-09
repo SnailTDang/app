@@ -393,15 +393,10 @@
 
   .download-body {
     padding: 50px 0;
-    gap: 20px;
   }
 
   footer {
     padding: 80px 0;
-  }
-
-  .footer-menu {
-    gap: 20px;
   }
 
   .copyright {
