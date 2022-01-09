@@ -280,9 +280,6 @@
   }
 }
 @media screen and (max-width: 540px) {
-  .hero-content {
-    padding-top: 30px;
-  }
   .header-content-hero {
     font-size: 36px;
   }
@@ -340,11 +337,11 @@
   }
 
   .development {
-    padding: 50px 0;
+    padding: 80px 0;
   }
 
   .apps-reason {
-    padding: 50px 0;
+    padding: 80px 0;
   }
 
   .list-reason {
@@ -353,11 +350,11 @@
   }
 
   .features-extra {
-    padding: 50px 0;
+    padding: 80px 0;
   }
 
   #pricing {
-    padding: 50px 0;
+    padding: 80px 0;
   }
 
   .btn-slide {
@@ -365,7 +362,7 @@
   }
 
   #meet-client {
-    padding: 50px 0;
+    padding: 80px 0;
   }
 
   .question-heading {
@@ -390,7 +387,7 @@
   }
 
   #Faqs-section {
-    padding: 50px 0;
+    padding: 80px 0;
   }
 
   .download-body h1 {
@@ -398,7 +395,7 @@
   }
 
   .download-body {
-    padding: 50px 0;
+    padding: 80px 0;
   }
 
   footer {
